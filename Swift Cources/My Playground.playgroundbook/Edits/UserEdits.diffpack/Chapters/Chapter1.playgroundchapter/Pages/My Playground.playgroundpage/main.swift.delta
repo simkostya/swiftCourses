@@ -36,17 +36,34 @@ var numbersArray = [-3, 34, -11, 2, 100, 432, 2, -94, -55, -8]
 //Task 4
 // Создайте массив с названиями всех месяцев, типа String. Затем создайте словарь и с помощью цикла задайте ему значения на основании массива: где в качестве ключей будут выступать цифры (индексы), а в качестве значений - элементы массива.
 
-let mounthArray = ["January", "February", "March", "April","May","June","July","August","September","October","November","December"]
-let dict = Dictionary(uniqueKeysWithValues: zip(mounthArray.indices, mounthArray)).sorted(by: &lt;)
-for i in dict{
-    print(i)
-}
+//let mounthArray = ["January", "February", "March", "April","May","June","July","August","September","October","November","December"]
+//let dict = Dictionary(uniqueKeysWithValues: zip(mounthArray.indices, mounthArray)).sorted(by: &lt;)
+//for i in dict{
+//    print(i)
+//}
 
 // Task 5
 // Создайте словарь: var dictionary = ["first": 1, "second": 2, "third": 3, "fourth": 4] Поменяйте местами значения по ключам “first” и “fourth”. Выведите в консоль итоговый словарь
 
+//var dictionary = ["first": 1, "second": 2, "third": 3, "fourth": 4]
+//if let value = dictionary["first"], let existingValue = dictionary["fourth"] {
+//    dictionary["first"] = existingValue
+//    dictionary["fourth"] = value
+//}
+//print(dictionary)
+
 // Task 6
 // Создайте пустой словарь calendar, так же вам понадобиться массив с месяцами из четвертого задания. С помощью цикла от 1970 до 2022 задайте значения для словаря. В качестве ключа пусть будет год, а значение это массив с месяцами.
+
+//var calendar = [Int:[String]]()
+//let mounthArray = ["January", "February", "March", "April","May","June","July","August","September","October","November","December"]
+//
+//for i in 1970...2022{
+//    calendar[i] = mounthArray
+//}
+//let sortedYourArray = calendar.sorted( by: { $0.0 &lt; $1.0 })
+//print(sortedYourArray)
+
 
 // Task 7
 // С помощью другого цикла добавьте в calendar на каждый год по одному месяцу с вашим названием, чтобы в каждом году вышло 13 месяцев.
@@ -61,7 +78,7 @@ for i in dict{
 // Создайте строку, в которой будет храниться любая фраза из трех или более слов c восклицательным знаком в конце. Выведите в консоль первое и последнее слово из этой строки (без восклицательного знака). В этом задании необходимо найти способ доставать слова из вашей строки, погуглите методы с помощью которых это возможно реализовать.
 </string>
 			<key>ModifiedRange</key>
-			<string>{0, 2931}</string>
+			<string>{0, 3515}</string>
 			<key>OriginalContent</key>
 			<string>
 </string>
