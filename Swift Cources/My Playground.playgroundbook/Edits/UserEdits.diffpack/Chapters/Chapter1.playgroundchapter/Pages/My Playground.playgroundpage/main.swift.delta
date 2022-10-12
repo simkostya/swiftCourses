@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import UIKit
+
+var numbersArray = [-3, 34, -11, 2, 100, 432, 2, -94, -55, -8] 
+
+// Task 1
+// Замените все отрицательные числа на 0 и выведите массив в консоль
+
+//for i in numbersArray.indices {
+//    if numbersArray[i] &lt;= 0 {
+//        numbersArray[i] = 0
+//    }
+//}
+//print(numbersArray)
+
+// Task 2
+// Найдите минимальный и максимальный элемент в массиве и выведите его в консоль
+
+//if let result1 = numbersArray.min(), let result2 = numbersArray.max() {
+//    print("Minimum element : \(result1), Maximum element : \(result2)")
+//} 
+
+// Task 3
+// Найдите сумму элементов массива чисел и выведите ее в консоль
+
+//let sum = numbersArray.reduce(0, +)
+//print("Sum of Array is : ", sum)
+
+//Task 4
+// Создайте массив с названиями всех месяцев, типа String. Затем создайте словарь и с помощью цикла задайте ему значения на основании массива: где в качестве ключей будут выступать цифры (индексы), а в качестве значений - элементы массива.
+
+let mounthArray = ["January", "February", "March", "April","May","June","July","August","September","October","November","December"]
+let dict = Dictionary(uniqueKeysWithValues: zip(mounthArray.indices, mounthArray)).sorted(by: &lt;)
+for i in dict{
+    print(i)
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1196}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
