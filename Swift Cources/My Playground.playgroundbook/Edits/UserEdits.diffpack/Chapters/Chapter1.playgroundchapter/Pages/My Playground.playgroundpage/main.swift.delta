@@ -8,7 +8,7 @@
 			<key>ModifiedContent</key>
 			<string>import UIKit
 
-var numbersArray = [-3, 34, -11, 2, 100, 432, 2, -94, -55, -8] 
+//var numbersArray = [-3, 34, -11, 2, 100, 432, 2, -94, -55, -8] 
 
 // Task 1
 // Замените все отрицательные числа на 0 и выведите массив в консоль
@@ -68,8 +68,53 @@ var numbersArray = [-3, 34, -11, 2, 100, 432, 2, -94, -55, -8]
 // Task 7
 // С помощью другого цикла добавьте в calendar на каждый год по одному месяцу с вашим названием, чтобы в каждом году вышло 13 месяцев.
 
+//var calendar = [Int:[String]]()
+//var mounthArray = ["January", "February", "March", "April","May","June","July","August","September","October","November","December"]
+//mounthArray.insert(contentsOf: ["MyMounth"], at: 12)
+//
+//for i in 1970...2022{
+//    calendar[i] = mounthArray
+//}
+//
+//let sortedYourArray = calendar.sorted( by: { $0.0 &lt; $1.0 })
+//print(sortedYourArray)
+
 // Task 7.1
 // На основании словаря, который у вас получился в седьмом задании, давайте создадим новый словарь, который будет включать в себя также и даты, a именно массив с числами от 1 до 31: Создайте массив с числами от 1 до 31 с помощью цикла. Создайте новый словарь calendarPro, где в качестве ключей будут года, в качестве значений вложенные словари. В которых в качестве ключей названия месяцев, а в качестве значений массив с днями созданный выше. Выведите в консоль 1 сентября 2019 года. PS: Для заполнения calendarPro используйте только созданный массив с числами, и словарь с месяцами, и никаких других данных
+
+var days = [Int]()
+for i in 1...31 {
+    days.append(i)
+}
+var mounthArray = ["January": days, "February": days, "March": days, "April": days,"May": days,"June": days,"July": days,"August": days,"September": days,"October": days,"November": days,"December": days]
+
+var calendarPro = [Int:[String:[Int]]]()
+var data: [Int : [String : [Int]]] = [:]
+
+for i in 1970...2022{
+    calendarPro[i] = mounthArray
+}
+
+//print(calendarPro)
+
+//var result = calendarPro.filter({ $0.key == 2019 || $0.value == ["October": days]})
+
+var result = calendarPro.filter({ $0.key == 2019 })
+var dfdfd = result.filter({$0.value.contains { ($0.key == "September", $0.value == days) -&gt; Bool}
+})
+
+print(result)
+//print(findKeyForValue("January", dictionary: calendarPro))
+
+
+
+//let sortedYourArray = calendarPro.sorted( by: { $0.0 &lt; $1.0 })
+
+
+
+
+
+
 
 // Task 8
 // Создайте 2 переменные с числами. Если значения равны, выведите в консоль их сумму умноженную на 3, если нет, выведите в консоль их сумму в случае если она четное число.
@@ -78,7 +123,7 @@ var numbersArray = [-3, 34, -11, 2, 100, 432, 2, -94, -55, -8]
 // Создайте строку, в которой будет храниться любая фраза из трех или более слов c восклицательным знаком в конце. Выведите в консоль первое и последнее слово из этой строки (без восклицательного знака). В этом задании необходимо найти способ доставать слова из вашей строки, погуглите методы с помощью которых это возможно реализовать.
 </string>
 			<key>ModifiedRange</key>
-			<string>{0, 3515}</string>
+			<string>{0, 4713}</string>
 			<key>OriginalContent</key>
 			<string>
 </string>
