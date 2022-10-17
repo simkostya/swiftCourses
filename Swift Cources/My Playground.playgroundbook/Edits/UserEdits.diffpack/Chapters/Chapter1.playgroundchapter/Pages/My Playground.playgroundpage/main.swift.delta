@@ -86,34 +86,22 @@ var days = [Int]()
 for i in 1...31 {
     days.append(i)
 }
-var mounthArray = ["January": days, "February": days, "March": days, "April": days,"May": days,"June": days,"July": days,"August": days,"September": days,"October": days,"November": days,"December": days]
+
+var monthArray = ["January": days, "February": days, "March": days, "April": days,"May": days,"June": days,"July": days,"August": days,"September": days,"October": days,"November": days,"December": days]
 
 var calendarPro = [Int:[String:[Int]]]()
-var data: [Int : [String : [Int]]] = [:]
 
 for i in 1970...2022{
-    calendarPro[i] = mounthArray
+    calendarPro[i] = monthArray
 }
 
-//print(calendarPro)
+var firstDay = days[0]
+let monthSpecific = monthArray.filter( { $0.key.hasPrefix("S") } ).keys
+let yearSpecific = (calendarPro.filter {$0.key == 2019}).keys
+let monthToString = Array(monthSpecific)[0]
+let yearToString = Array(yearSpecific)[0]
 
-//var result = calendarPro.filter({ $0.key == 2019 || $0.value == ["October": days]})
-
-var result = calendarPro.filter({ $0.key == 2019 })
-var dfdfd = result.filter({$0.value.contains { ($0.key == "September", $0.value == days) -&gt; Bool}
-})
-
-print(result)
-//print(findKeyForValue("January", dictionary: calendarPro))
-
-
-
-//let sortedYourArray = calendarPro.sorted( by: { $0.0 &lt; $1.0 })
-
-
-
-
-
+print("Result is: \(firstDay) \(monthToString) \(yearToString)")
 
 
 // Task 8
@@ -123,7 +111,7 @@ print(result)
 // Создайте строку, в которой будет храниться любая фраза из трех или более слов c восклицательным знаком в конце. Выведите в консоль первое и последнее слово из этой строки (без восклицательного знака). В этом задании необходимо найти способ доставать слова из вашей строки, погуглите методы с помощью которых это возможно реализовать.
 </string>
 			<key>ModifiedRange</key>
-			<string>{0, 4713}</string>
+			<string>{0, 4569}</string>
 			<key>OriginalContent</key>
 			<string>
 </string>
