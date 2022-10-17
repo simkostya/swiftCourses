@@ -107,30 +107,58 @@
 // Task 8
 // Создайте 2 переменные с числами. Если значения равны, выведите в консоль их сумму умноженную на 3, если нет, выведите в консоль их сумму в случае если она четное число.
 
-var numberOne = 2
-var numberTwo = 3
-
-if numberOne == numberTwo {
-    print("\((numberOne + numberTwo)*3)")
-}else {
-    let resultTwo = numberOne + numberTwo
-    if resultTwo % 2 == 0 {
-        print(resultTwo)
-    }else {
-        print("Сумма чисел нечетная. Числа не равны")
-    }
-}
+//var numberOne = 2
+//var numberTwo = 3
+//
+//if numberOne == numberTwo {
+//    print("\((numberOne + numberTwo)*3)")
+//}else {
+//    let resultTwo = numberOne + numberTwo
+//    if resultTwo % 2 == 0 {
+//        print(resultTwo)
+//    }else {
+//        print("Сумма чисел нечетная. Числа не равны")
+//    }
+//}
 
 // Task 9
 // Создайте строку, в которой будет храниться любая фраза из трех или более слов c восклицательным знаком в конце. Выведите в консоль первое и последнее слово из этой строки (без восклицательного знака). В этом задании необходимо найти способ доставать слова из вашей строки, погуглите методы с помощью которых это возможно реализовать.
+
+//var myString = "Autumn is great!"
+//
+////Variant_1
+//let words = myString.byWords
+//print("First word is: \(words.first ?? ""), Last word is: \(words.last ?? "")")
+//
+//extension StringProtocol { 
+//    var byWords: [SubSequence] {
+//        var byWords: [SubSequence] = []
+//        enumerateSubstrings(in: startIndex..., options: .byWords) { _, range, _, _ in
+//            byWords.append(self[range])
+//        }
+//        return byWords
+//    }
+//}
+
+//Variant_2
+//let clean = myString.filter{ $0.isLetter || $0.isWhitespace }
+//print(clean)
+//if let lastIndex = clean.lastIndex(of: " "), 
+//   let indexOne = clean.index(lastIndex, offsetBy: 1, limitedBy: clean.index(before: clean.endIndex)), 
+//   let indexTwo = clean.firstIndex(of: " ") {
+//    let firstWord = clean[...indexTwo]
+//    let lastWord = clean[indexOne...]
+//    
+//    print("First word is: \(firstWord), Last word is: \(lastWord)")
+//}
+
 </string>
 			<key>ModifiedRange</key>
-			<string>{0, 4894}</string>
+			<string>{0, 5833}</string>
 			<key>OriginalContent</key>
-			<string>
-</string>
+			<string></string>
 			<key>OriginalRange</key>
-			<string>{0, 1}</string>
+			<string>{0, 0}</string>
 		</dict>
 	</array>
 	<key>File</key>
